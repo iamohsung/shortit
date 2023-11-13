@@ -1,0 +1,62 @@
+################################################################################################
+ShortLinks 
+################################################################################################
+
+###
+GET http://localhost:3000/api/short-links/
+
+###
+GET http://localhost:3000/api/short-links/6550bd517a04dba9bedf8a5a
+
+###
+POST http://localhost:3000/api/short-links/
+Content-Type: application/json
+
+{
+  "title": "codeit",
+  "url": "https://codeit.kr"
+}
+
+###
+PATCH http://localhost:3000/api/short-links/6550bd517a04dba9bedf8a5a
+Content-Type: application/json
+
+{
+  "title": "codeit-edit2"
+}
+
+###
+DELETE http://localhost:3000/api/short-links/6550bd10246b6279bfc52cbe
+
+
+
+
+################################################################################################
+QRCode
+################################################################################################
+
+###
+GET http://localhost:3000/api/qrcodes/
+
+###
+GET http://localhost:3000/api/qrcodes/6550c4c01886c97e785075bd
+
+###
+POST http://localhost:3000/api/qrcodes/
+Content-Type: application/json
+
+{
+  "title": "코드잇 커뮤니티",
+  "url": "https://codeit.kr/community/general"
+}
+
+###
+PATCH http://localhost:3000/api/qrcodes/6550c4c01886c97e785075bd
+Content-Type: application/json
+
+{
+  "title": "코드잇 커뮤니티!"
+}
+
+###
+DELETE http://localhost:3000/api/qrcodes/6550c4c01886c97e785075bd
